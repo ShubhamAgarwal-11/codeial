@@ -1,0 +1,13 @@
+footer div {
+  background-color: #50514d;
+  color: white;
+  font-size: larger;
+  padding: 5px;
+  font-weight: bolder;
+  display: flex; }
+
+footer .links li {
+  list-style: none; }
+  footer .links li a {
+    color: white;
+    text-decoration: none; }

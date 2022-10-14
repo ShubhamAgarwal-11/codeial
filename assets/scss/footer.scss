@@ -1,0 +1,20 @@
+footer{
+    div{
+        background-color: rgb(80, 81, 77);
+        color: white;
+        font-size: larger;
+        padding: 5px;
+        font-weight: bolder;
+        display: flex;
+        // justify-content: space-between;
+    }
+    .links{
+        li{
+            list-style: none;
+            a{
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
+}

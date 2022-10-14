@@ -1,0 +1,22 @@
+header nav {
+  display: flex;
+  background-color: #00a2ff;
+  justify-content: space-between; }
+  header nav .heading {
+    margin: 10px; }
+    header nav .heading a {
+      font-size: 1.5rem;
+      color: white;
+      text-decoration: none;
+      font-weight: bolder; }
+  header nav .auth-link ul {
+    display: flex;
+    margin: 4% 5px; }
+    header nav .auth-link ul li {
+      list-style: none; }
+      header nav .auth-link ul li a {
+        text-decoration: none;
+        color: white;
+        margin-right: 12px;
+        font-size: large;
+        font-weight: bold; }
