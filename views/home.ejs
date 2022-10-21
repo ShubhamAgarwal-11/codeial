@@ -17,3 +17,12 @@
         </ul>
     </div>
 </section>
+
+<section id="user-frineds">
+    <h4>Friends</h4>
+    <% for(user of all_users) { %>
+        <p>
+            <a href="users/profile/<%= user.id %>"><%= user.name %></a>
+        </p>
+    <% } %>
+</section>
