@@ -6,7 +6,11 @@ module.exports.create = function(req,res){
         content : req.body.content,
         user: req.user._id
     },function(err,post){
-        if(err){ console.log('Error in creating a post'); return;}
+        if(err){
+            req.flash('error',err);
+            return res.redirect('back');
+        }
+        req.flash('success','Post Published!');
         return res.redirect('back');
     })
 }
@@ -18,9 +22,11 @@ module.exports.destroy = function(req,res){
             post.remove();
 
             Comment.deleteMany({post: req.params.id},function(err){
+                req.flash('success','Post and associated comments deleted!');
                 return res.redirect('back');
             });
         }else{
+            req.flash('error','You cannot delete this post');
             return res.redirect('back');
         }
     });
